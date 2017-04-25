@@ -48,8 +48,8 @@
 
 		<!-- Mapping class -->
 <!-- 		<mapping class="org.coolstory.nas.domain.Professional" /> -->
-			<mapping resource="com/vo/KKUserMst.hbm.xml"/>
-			<mapping resource="com/vo/KkUserLocaionTxn.hbm.xml"/>
+			<mapping resource="KKUserMst.hbm.xml"/>
+			<mapping resource="KkUserLocaionTxn.hbm.xml"/>
 			
 <!-- 			/Test/src/vo/UserVo.hbm.xml -->
 
