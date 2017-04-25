@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.vo.KkRoleMst"  table="kk_role_mst">
+      <meta attribute="class-description">
+         This class contains the "kk_role_mst" detail. 
+      </meta>
+      <id name="locationTxnId" type="java.lang.Long" column="LOCATIN_TXN_ID">
+         <generator class="assigned"/>
+      </id>
+     <property name="userId" column="USER_ID" type="java.lang.Long"/>
+      <property name="latitude" column="LATITUDE" type="java.lang.String"/>
+      <property name="longitude" column="LNGITUDE" type="java.lang.String"/>
+     
+      <property name="activeFlag" column="activeFlag" type="java.lang.Integer"/>
+      <property name="lastAddress" column="LAST_ADDRESS" type="java.lang.String"/>
+      <property name="activeFlag" column="ACTIVE_FLAG" type="java.lang.Integer"/>
+      <property name="latestRec" column="LATEST_REC" type="java.lang.Integer"/>
+      <property name="timein_min" column="TIMEIN_MIN" type="java.lang.Integer"/>
+      <property name="hours" column="HOURS" type="java.lang.Integer"/>
+    
+      <property name="createdDate" column="CREATION_DATE" type="timestamp"/>
+      
+      
+      <property name="mobileNO" column="mobile_NO" type="java.lang.Long"/>
+      
+      
+    
+   </class>
+
+</hibernate-mapping>
