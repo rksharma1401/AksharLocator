@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+	<!DOCTYPE hibernate-configuration PUBLIC
+	        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory >
+		<!-- Database connection settings -->
+			
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+
+<!-- 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property> -->
+<!-- 		<property name="connection.url">jdbc:mysql://localhost:3306/aksharev_AksharLocator</property> -->
+<!-- 		<property name="connection.username">aksharev_LocAdmi</property> -->
+<!-- 		<property name="connection.password">k123000k</property> -->
+<!-- <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+
+<!-- user-aksharev_LocAdmi -->
+<!-- DB-aksharev_AksharLocator -->
+<!-- pwd-k123000k -->
+<!-- <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> -->
+<!-- 		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> -->
+<!-- 		<property name="connection.username">system</property> -->
+<!-- 		<property name="connection.password">SYSTEM</property> -->
+<!-- <property name="dialect">org.hibernate.dialect.Oracle11gDialect</property> -->
+
+		<!-- JDBC connection pool (use the built-in) -->
+<!-- 		<property name="connection.pool_size">1</property> -->
+
+		<!-- SQL dialect -->
+		
+
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Mapping files -->
+		<!-- <mapping resource="javabeat/net/hibernate/Employee.hbm.xml"/> -->
+
+		<!-- Mapping class -->
+<!-- 		<mapping class="org.coolstory.nas.domain.Professional" /> -->
+			<mapping resource="com/vo/KKUserMst.hbm.xml"/>
+			<mapping resource="com/vo/KkUserLocaionTxn.hbm.xml"/>
+			
+<!-- 			/Test/src/vo/UserVo.hbm.xml -->
+
+<!--<mapping resource="StudentSportMapping.hbm.xml"/>
+
+		 Bonecp configuration -->
+<!-- 		<property name="bonecp.idleMaxAge">240</property> -->
+<!-- 		<property name="bonecp.idleConnectionTestPeriod">60</property> -->
+<!-- 		<property name="bonecp.partitionCount">3</property> -->
+<!-- 		<property name="bonecp.acquireIncrement">10</property> -->
+<!-- 		<property name="bonecp.maxConnectionsPerPartition">60</property> -->
+<!-- 		<property name="bonecp.minConnectionsPerPartition">20</property> -->
+<!-- 		<property name="bonecp.statementsCacheSize">50</property> -->
+<!-- 		<property name="bonecp.releaseHelperThreads">3</property> -->
+
+</session-factory>
+</hibernate-configuration>
