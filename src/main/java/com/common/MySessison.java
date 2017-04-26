@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 public class MySessison 
 {
 	
-	 public static MySessison mySession=null;
+	 public static MySessison mySession;
 	 private SessionFactory factory;
 	private  MySessison() {
 		// TODO Auto-generated constructor stub
